@@ -1,35 +1,21 @@
-package store.domain;
+package domain;
 
 public class Promotion {
-    private final String name;
-    private final String targetProduct;
-    private final int requiredQuantity;
-    private final int freeQuantity;
+    private String productName;
+    private String type;
+    private int requiredAmount;
+    private int bonusAmount;
 
-    public Promotion(String name, String targetProduct, int requiredQuantity, int freeQuantity) {
-        this.name = name;
-        this.targetProduct = targetProduct;
-        this.requiredQuantity = requiredQuantity;
-        this.freeQuantity = freeQuantity;
+    public Promotion(String productName, String type, int requiredAmount, int bonusAmount) {
+        this.productName = productName;
+        this.type = type;
+        this.requiredAmount = requiredAmount;
+        this.bonusAmount = bonusAmount;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getTargetProduct() {
-        return targetProduct;
-    }
-
-    public int getRequiredQuantity() {
-        return requiredQuantity;
-    }
-
-    public int getFreeQuantity() {
-        return freeQuantity;
-    }
-
-    public boolean isApplicable(int quantity) {
-        return quantity >= requiredQuantity;
-    }
+    // Getter 메서드
+    public String getProductName() { return productName; }
+    public String getType() { return type; }
+    public int getRequiredAmount() { return requiredAmount; }
+    public int getBonusAmount() { return bonusAmount; }
 }

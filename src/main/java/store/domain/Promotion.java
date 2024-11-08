@@ -1,4 +1,4 @@
 package store.domain;
 
-public class inventory {
+public class Promotion {
 }

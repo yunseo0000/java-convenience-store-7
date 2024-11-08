@@ -1,4 +1,4 @@
 package store.domain;
 
-public class product {
+public class Inventory {
 }

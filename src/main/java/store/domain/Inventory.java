@@ -1,5 +1,7 @@
 package domain;
 
+import domain.Product;
+
 import java.util.HashMap;
 import java.util.Map;
 
